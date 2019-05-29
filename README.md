@@ -53,4 +53,49 @@ Links are really great because they facilitate loading content from other source
 
 Lastly, iframes are a really cool idea because they enable you to embed somebody else's website within your own website. This is pretty crazy since it's really hard or annoying to do this in different environments. Ads usually make use of this so that a website owner can leave it to the ad provider to actually generate content on their page, but there's other use cases like embedding chat boxes or other "widgets" on a page. Again, this can be leveraged in VR. [Exokit](https://exokit.org/), an engine for building WebXR experiences, recently landed support for what they call ["reality layers"](https://github.com/exokitxr/exokit/pull/760). This takes the concept of iframes and applies them to WebXR. Essentially, you can create an iframe that loads some 3D content, and then position it within your own 3D space. That way you can mix and match interactive bits of virtual reality without having to do strong integrations with the code running in those spaces. This is something you can't do in any other VR platform due to the siloing of game engines and applications themselves.
 
-In short, the web's biggest strength is the ability for people to mix and match content from different places, and tinker with the content they load.
+In short, the web's biggest strength is the ability for people to mix and match content from different places, and tinker with the content they load, and combining this with P2P and VR will enable people to innovate and share content without the constraints of siloed ecosystems.
+
+## How to get there
+
+Here's a vague roadmap of stuff that needs to be done to realize a local-first cyberspace.
+
+- [ ] Dat support in [Exokit](https://github.com/exokitxr/exokit)
+  - [ ] Loading content from `dat://` URLs
+  - [ ] [DatArchive API](https://beakerbrowser.com/docs/apis/dat) available to JS
+  - [ ] [datPeers](https://beakerbrowser.com/docs/apis/experimental-datpeers) or [PeerSocket](https://github.com/beakerbrowser/beaker-core/pull/6) API for multiplayer
+  - [ ] [library API](https://beakerbrowser.com/docs/apis/experimental-library) for managing dats
+- [ ] Dat support in regular web
+  - [x] Loading content as websites: [dat-gateway](https://github.com/garbados/dat-gateway/)
+  - [x] DatArchive API: [dat-archive-web](https://github.com/RangerMauve/dat-archive-web)
+  - [ ] URL rewriter on pages / intercepting `fetch()` calls. Progress: [load-dat-page](https://github.com/RangerMauve/load-dat-page)
+  - [ ] Make it easy to deploy [homebase](https://github.com/beakerbrowser/homebase/) on own computer / cloud instance
+ - [ ] Dat in other browsers
+   - [x] Extensions: [dat-webext (Firefox developer edition, with flags disabled)](https://github.com/cliqz-oss/dat-webext)
+   - [x] Desktop: [Beaker](https://beakerbrowser.com/), [Cliqz](https://cliqz.com/en/latest) (uses dat-webext)
+   - [ ] Mobile: [cliqz-concept-browser](https://github.com/cliqz/cliqz-concept-browser) (uses dat-webext, not yet released), [Bunsen (WIP)](https://bunsenbrowser.github.io/#!index.md)
+   - [x] Chrome OS: [DatPart](https://github.com/HughIsaacs2/DatPart)
+- Dat support in frameworks
+  - [x] P2P Multiplayer: [aframe-dat-peers-networking](https://github.com/RangerMauve/aframe-dat-peers-networking)
+  - [x] [JanusVR](https://github.com/jbaicoianu/janusweb) for loading scenes
+  - [ ] Mozilla Hubs?
+- [ ] User editing in VR
+  - [ ] Terminal for editing the DOM [dat-xr-scene-ide](https://github.com/RangerMauve/dat-xr-scene-ide/)
+  - [ ] Sketch up set of interaction types in VR. E.g. touch/grab/activate
+  - [ ] Create base VR scene with useful interactions like physics
+  - [ ] Tools for moving objects / adding new ones in VR
+  - [ ] Create a module for saving an aframe scene to an HTML file after it's been modified
+  - [ ] Add ability to spawn in tools for modifying the world when in archive and save the world after editing
+  - [ ] Object templates and components for spawning them
+  - [ ] Create high level scripting for interactions in VR (on click, create new object from template; on collide with player, get bigger)
+  - [ ] Graph editor for creating interactions. Inspired by stuff like [Glitchspace](https://store.steampowered.com/app/290060/Glitchspace/), or [The Magic Circle](https://www.magiccirclegame.com/seriously)
+- [ ] local-first cyberspace Operating System
+  - [ ] Create high "OS" based on Exokit focused on P2P WebXR
+  - [ ] Root some existing standalone headsets like the Go, Quest, or Magic Leap
+  - [ ] Install Exokit with the defeault envrionment as the launcher
+  - [ ] Experiment with getting Ad-Hoc Mesh networking with the WiFi adapter.
+  - [ ] Integrate mesh networking with Dat stack in exokit
+  
+ ## Contributing
+ 
+ What's cool, is that a lot of the goals of local-first cyberspace are aligned with WebXR or Dat in general!
+ If you're interested in moving this along, feel free to [create an issue](https://github.com/RangerMauve/local-first-cyberspace/issues/new) with either ideas on what could be done, or pick from anything on the roadmap that seems like fun. If nothing else appeals to you, consider creating some sort of VR content and publishing it to the P2P network with [Beaker](https://beakerbrowser.com/).
