@@ -78,7 +78,8 @@ Here's a vague roadmap of stuff that needs to be done to realize a local-first c
   - [x] P2P Multiplayer: [aframe-dat-peers-networking](https://github.com/RangerMauve/aframe-dat-peers-networking)
   - [x] [JanusVR](https://github.com/jbaicoianu/janusweb) for loading scenes
   - [ ] Mozilla Hubs?
-- [ ] User editing in VR
+- [ ] Interactions in VR
+  - [ ] Navigating worlds / loading bookmarks
   - [ ] Terminal for editing the DOM [dat-xr-scene-ide](https://github.com/RangerMauve/dat-xr-scene-ide/)
   - [ ] Sketch up set of interaction types in VR. E.g. touch/grab/activate
   - [ ] Create base VR scene with useful interactions like physics
