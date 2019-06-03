@@ -80,6 +80,7 @@ Here's a vague roadmap of stuff that needs to be done to realize a local-first c
   - [ ] Mozilla Hubs?
 - [ ] Interactions in VR
   - [ ] Navigating worlds / loading bookmarks
+  - [ ] High level portal component using the iframe feature in exokit for aframe. `a-iframe`?
   - [ ] Terminal for editing the DOM [dat-xr-scene-ide](https://github.com/RangerMauve/dat-xr-scene-ide/)
   - [ ] Sketch up set of interaction types in VR. E.g. touch/grab/activate
   - [ ] Create base VR scene with useful interactions like physics
