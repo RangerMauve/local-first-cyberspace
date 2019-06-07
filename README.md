@@ -60,6 +60,11 @@ In short, the web's biggest strength is the ability for people to mix and match 
 Here's a vague roadmap of stuff that needs to be done to realize a local-first cyberspace.
 
 - [ ] Dat support in [Exokit](https://github.com/exokitxr/exokit)
+  - [ ] Rework [window-xhr](https://github.com/modulesio/window-xhr/issues/5) to use fetch to consolidate resource loading
+  - [ ] Add intercepts to [window-fetch](https://github.com/modulesio/window-fetch) for custom protocols
+  - [ ] Implement `dat-fetch` which taks a DatArchive instance and exposes fetch. Based on [dat-fetch](https://github.com/RangerMauve/load-dat-page/blob/master/XHRPatcher.js#L69)
+  - [ ] Modify the `fetch` at the [top level of exokit frames](https://github.com/exokitxr/exokit/blob/master/src/WindowBase.js#L23) to make use of the dat-enhanced fetch
+  - [ ] Use modified fetch for [synchronous script loading](https://github.com/exokitxr/exokit/blob/master/src/request.js#L20)
   - [ ] Loading content from `dat://` URLs
   - [ ] [DatArchive API](https://beakerbrowser.com/docs/apis/dat) available to JS
   - [ ] [datPeers](https://beakerbrowser.com/docs/apis/experimental-datpeers) or [PeerSocket](https://github.com/beakerbrowser/beaker-core/pull/6) API for multiplayer
