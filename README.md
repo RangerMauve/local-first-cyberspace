@@ -60,11 +60,11 @@ In short, the web's biggest strength is the ability for people to mix and match 
 Here's a vague roadmap of stuff that needs to be done to realize a local-first cyberspace.
 
 - [ ] Dat support in [Exokit](https://github.com/exokitxr/exokit)
-  - [ ] Rework [window-xhr](https://github.com/modulesio/window-xhr/issues/5) to use fetch to consolidate resource loading
-  - [ ] Add intercepts to [window-fetch](https://github.com/modulesio/window-fetch) for custom protocols
+  - [x] Rework [window-xhr](https://github.com/modulesio/window-xhr/issues/5) to use fetch to consolidate resource loading
+  - [x] Add intercepts to [window-fetch](https://github.com/modulesio/window-fetch) for custom protocols
   - [x] Implement [dat-fetch](https://github.com/RangerMauve/dat-fetch) which taks a DatArchive instance and exposes fetch. Based on [dat-fetch](https://github.com/RangerMauve/load-dat-page/blob/master/XHRPatcher.js#L69)
-  - [ ] Modify the `fetch` at the [top level of exokit frames](https://github.com/exokitxr/exokit/blob/master/src/WindowBase.js#L23), and the one used for [synchronous script loading](https://github.com/exokitxr/exokit/blob/master/src/request.js#L20)  to make use of the dat-enhanced fetch. Use [node-dat-archive](https://github.com/beakerbrowser/node-dat-archive) to start.
-  - [ ] Test loading content from `dat://` URLs
+  - [x] Modify the `fetch` at the [top level of exokit frames](https://github.com/exokitxr/exokit/blob/master/src/WindowBase.js#L23), and the one used for [synchronous script loading](https://github.com/exokitxr/exokit/blob/master/src/request.js#L20)  to make use of the dat-enhanced fetch. Use [node-dat-archive](https://github.com/beakerbrowser/node-dat-archive) to start.
+  - [x] Test loading content from `dat://` URLs
   - [ ] [DatArchive API](https://beakerbrowser.com/docs/apis/dat) available to JS
   - [ ] [datPeers](https://beakerbrowser.com/docs/apis/experimental-datpeers) or [PeerSocket](https://github.com/beakerbrowser/beaker-core/pull/6) API for multiplayer. Use [dat-peers](https://github.com/RangerMauve/dat-peers) module to start.
   - [ ] Integrate [dat SDK](https://github.com/datproject/sdk)
