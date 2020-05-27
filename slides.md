@@ -7,10 +7,10 @@ You should check out Web Vritual Reality and the decentralized web and play arou
 ## Layout
 
 - Title
-- About me
 - Cyberspace
 	- Cyberpunk Books
 	- Surfing cyberspace
+- About me
 - Walled Gardens
 	- Facebook, Microsoft, Apple
 	- Gate keeping
