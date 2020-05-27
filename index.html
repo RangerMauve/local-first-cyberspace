@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+	body {
+  	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	}
+  h1, h2, h3 {
+    font-weight: normal;
+  }
+
+  .purplebg {
+	  background: #ae40ca;
+	  color: white;
+	}
+
+	.purplebg a:link, .purplebg a:visited {
+	  color: inherit;
+	}
+
+	.wtbg {
+	  background: rgb(239, 51, 76);
+	  color: white;
+	}
+
+  .datbg {
+    background: #2aca4b;
+    color: #fff;
+  }
+
+  .beakerbg {
+    background: #5743ff;
+    color: #fff;
+  }
+
+	img, video {
+	  width: 70vmin;
+	  height: 70vmin;
+	  object-fit: contain;
+	  text-align: center;
+	}
+	.smallmedia {
+		width: 24vmin;
+		height: 24vmin;
+	}
+</style>
+<textarea id="source">
+
+class: center, middle, purplebg
+
+# 😎 Local First Cyberspace 😎
+
+By Mauve
+
+[Source.](https://github.com/RangerMauve/local-first-cyberspace#local-first-cyberspace) Press `P` for speaker notes.
+
+---
+
+class: center, middle
+
+![Cover art of the book Neuromancer by William Gibson, features a glitchy looking person with cyber-looking glasses](https://mechanteanemone.files.wordpress.com/2013/07/neuromancermain-739470.jpg)
+
+???
+
+I grew up reading cyberpunk novels and science fiction. From a very young age I was enamoured with the idea of flying through cyberspace and navigating virtual reality.
+One thing I particularly liked is when authors would describe how the connectivity would work and how people would load and navigate through the raw data.
+The last few years have been awesome to watch because a lot of the tech that used to be science fiction has becoming more and more real, and I've been luckly in that my passion for technology has been giving me a chance to actually mess with this stuff.
+
+---
+
+class: center, middle
+
+## `WHOAMI`
+
+[Mauve](https://ranger.mauve.moe/)💜 / [@RangerMauve](https://twitter.com/RangerMauve)👁  / Georgiy Shibaev💀
+
+Founder @ [Mauve Software Inc.](http://software.mauve.moe/)
+
+![My Logo, triangle with a square in it and a purple eye in the center. Three dots around the triangle](https://ranger.mauve.moe/RangerMauve.svg)
+
+???
+
+My name is Mauve, I'm @RangerMauve everywhere that it matters, I have a legal name I don't use anymore.
+
+I'm the founder of Mauve Software Inc. We're a tech consultancy that specializes in local-first software, peer to peer protocols, mesh networks, mixed reality, and web stuff / apps.
+
+---
+
+class: center, middle, purplebg
+
+## 🏢 State of VR/AR 🏢
+
+Oculus, HTC, Microsoft, MagicLeap, Unity, Unreal, etc
+
+???
+
+There's a bunch of big names in the VR and AR market right now.
+
+This covers different types of hardware, game engines for powering VR scenes and interfacing with hardware, and content distribution channels.
+
+This is great on paper. Companies can use existing tools and pathways instead of having to do everything from scratch.
+
+However these platforms all have some other stuff in common.
+
+---
+
+class: center, middle, wtbg
+
+## 🚫Closed Source🚫
+
+## 💰 Monopolistic 💰
+
+## 🧱 Walled Gardens 🧱
+
+???
+
+All of these cool platforms also happen to be closed source, each trying to be a monopoly, and each trying to keep others out of their own walled garden.
+
+Of course I'm being a bit sensational about this and it's not the end of the world, but these things do hurt creators in various ways.
+
+Things being closed source means that communities using tools don't have as much control over the direction of the tool and when something goes wrong or some feature is missing people end up being stuck on waiting for the platform to decide whether they want to do something about it.
+
+Part of the reason this stuff is closed source is that each of these companies is trying to become "the" virtual reality. They all want to control the hardware (to various degrees), control what sort of software can exist, and charge both developers and users for everthing created.
+
+What this leads to is walled gardens where it can be hard for a creator to slap something together and put it out there for their friends.
+
+Steam is on the more permissible end of publishing and using open source for the VR integration, and mostly focuses on taking a cut on created content.
+
+Facebook's Oculus is on the worse end where people need to ask Facebook for permission before they even start development, and Oculus takes liberties to block any features they'd want to implement themselves, kind of like what they did to the Virtual Desktop app which provided similar functionality to the Oculus Link way before Oculus came out with it.
+
+Big game engines are cool on paper but they come with proprietary APIs which may get chaged on you and which get to take yet another cut of anything you make / can limit functionality for smaller groups and indepedant developers.
+
+This increases the barrier to entry and makes it so that people have to figure out which landlord they want to be beholden to  instead of making cool content and sharing with people.
+
+---
+
+![WebXR logo](https://immersive-web.github.io/webxr-samples/media/logo/webxr-logo.svg)
+
+???
+
+Luckily, the web is coming to the rescue again with an open source API called WebXR.
+
+This abstracts away interacting with specific hardware and rendering to it in a way that works across any device.
+
+What's cool is that almost every headset supports WebXR or the older version of the API, WebVR.
+
+This means that you can build some sort of VR scene, and people will be able to see it on any device without needing to worry about asking Oculus permission before a user can view it.
+
+---
+
+class: center, middle
+
+[![Moon Rider logo](https://l3apq3bncl82o596k2d1ydn1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/null-810x492.jpeg)](https://moonrider.xyz/)
+
+???
+
+The coolest example of WebXR in action is probably Moonrider which is an open source and free alternative to the popular Beatsaber rythm game.
+
+The first time I tried it I was blown away that the web was capable of running something like that.
+
+---
+
+class: center, middle, 	purplebg
+
+### 🌐 Decentralized / Distributed Web 🌐
+
+![A bunch of computers connected together with lines](http://ranger.mauve.moe/webtorrent-presentation/mesh.svg)
+
+???
+
+A cool thing that I've been playing around is mixing this virtual reality stuff with the decentralied web
+
+Essentially, instead of using servers which host and serve your content, you use peer to peer connections to exchange files with others directly.
+
+Using these tools gives a bunch of additional advantages over the regular web.
+
+---
+
+class: center, middle, purplebg
+
+<a href="https://dat.foundation/"><img class="smallmedia" src="https://dat.foundation/assets/img/logo.fcc97b5b.svg"/></a>
+<a href="https://ipfs.io/"><img class="smallmedia" src="https://ipfs.io/images/ipfs-logo.svg"/></a>
+<a href="https://webtorrent.io/"><img class="smallmedia" src="https://webtorrent.io/img/webtorrent-small.png"/></a>
+<a href="https://hypercore-protocol.org/"><img class="smallmedia" src="https://hypercore-protocol.org/images/hypercore-protocol.png"/></a>
+
+???
+
+Here are some of my favorite p2p protocols that are on the dweb.
+
+Dat, IPFS, WebTorrent, and Hypercore-Protocol.
+
+---
+
+class: center, middle, datbg
+
+### 😮 No server setup
+
+### 🚂 Offline First
+
+### 🤝 Local network
+
+???
+
+First thing I like is that people don't need to worry about knowing what a server is and how to set one up.
+You can create a peer to peer website by shoving some files into your protocol of choice and getting a link to send to your friend.
+No need to learn Docker, or set up AWS accounts to help Jeff Bezos become a trillionaire faster.
+
+I'm not sure how other folks' experience with the internet has been, but growing up I've had to deal with not having internet connectivity a lot of the time and it was a huge pain when stuff just wouldn't load, let alone let me edit things.
+With these protocols, all your apps can function on your local device without needing to reach out to the network, and will sync with other devices once you're connected to the same network as them.
+
+Which brings me to the last cool thing, which is local network support.
+If two people are connected to the same router, they can exchange data right over their local connection instead of needing to reach out to the internet.
+Or even cooler, you could be out in the middle of the desert or something, and you could put up a solar powered router and everything would still work.
+Better yet, you could start experimenting with ad hoc mesh networks and not need any extra infrastructure outside of your device.
+
+---
+
+class: middle, purplebg
+
+### 1. 🤔 Think of an idea
+### 2. ⌨️  Hack together some JS/HTML
+### 3. 📦 Load your folder on the dweb
+### 4. 📫 Send a link to a friend
+### 5. 🎮 Enjoy!
+
+???
+
+Here's how making something looks in practice.
+
+---
+
+class: center, middle, beakerbg
+
+# ✨ Imagine ✨
+
+???
+
+So with this in mind, let me take you through some wild ideas.
+
+AR headsets are common place, and they're running local-first.
+
+You're out for a walk in the forest.
+
+Suddenly, your headset alerts you that it found a device advertising something interesting nearby.
+
+Let's say it's a Raspberry PI in a tree.
+
+You tell your headset to load it, and it pulls the information straight from the PI over a local mesh network.
+
+It loads up a magical looking scene with vivid colours and alien looking plants.
+
+You decide to save it for later with a gesture.
+
+Later you're hanging out with your friends, and you tell them about what you found.
+
+You tell your headset to start broadcasting the scene to nearby peers, and you all load it up in your living room to check it out.
+
+Ideally, sharing should be seamless and you shouldn't need accounts or constant access to some server somewhere.
+
+---
+
+class: center, middle, purplebg
+
+### 😤 Check it out & make something. 😤
+
+## ✨ Thank you ✨
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js">
+</script>
+<script>
+  var slideshow = remark.create();
+</script>
