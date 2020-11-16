@@ -25,7 +25,7 @@ Wouldn't it be cool if we could get rid of servers for most use-cases, and inste
 
 So here's what building on top of P2P primitives gives you:
 
-- You can create archvies locally without the internet, and modify them without needing to talk to a cloud
+- You can create archives locally without the internet, and modify them without needing to talk to a cloud
 - Once you've loaded an archive, you have a copy locally and it'll work fully offline
 - You can load archives through local networks over WiFi (or new network types) rather than reaching out across the world
 - You no longer need to worry about scaling back-end because there is no back-end
